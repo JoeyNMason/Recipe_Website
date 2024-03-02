@@ -1,0 +1,159 @@
+/* styles.css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+     
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1; 
+    
+}
+
+header{
+    display: flex; /* flex box*/
+    justify-content: space-between; 
+    align-items: center; /* centers the everything in this element*/
+    padding: 15px 10%; 
+    background-color: #faf4f6;
+}
+
+.logo {
+    order: -1; /* Move the logo to the beginning (left) of the flex container */
+}
+
+
+.nav-button{ 
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff; /* color of font */
+        text-decoration: none;
+        display: inline-block; 
+        padding: 0px 20px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        border-radius: 50px;
+        border: none;
+        background-color: rgba(236,213,220, 1); /* rgba deals with opacity levels which the a stands for */
+        margin-left: 20px;
+        padding: 9px 25px;
+}
+
+.nav-button:hover { 
+    background-color: rgba(236,213,220, 0.8);
+    /*color: hsla(172, 40%, 45%, 0.9) ;*/
+    
+}
+
+a {
+    text-decoration: none; /* Remove underline from linked elements */
+    color: #faf4f6; /* keeps the link color the same as text color */
+}
+
+/*.nav-bar{
+    list-style: none;
+}*/
+
+#logo{
+    width: 65px;
+    height: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.title-box-one {
+    border: 2px solid #ecd5dc;
+    border-radius: 10px;
+    width: 300px; /* Adjust width based on content */
+    margin: 25px auto;
+    background-color: #f1e0e4;
+    padding: 5px 10px; /* Add padding to create space between text and border */
+    display: flex;
+    align-items: center; /* Align text vertically */
+    justify-content: center; /* Center text horizontally */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.title-box-two {
+    border: 2px solid #ecd5dc;
+    border-radius: 10px;
+    width: 300px; /* Adjust width based on content */
+    margin: 25px auto;
+    background-color: #f1e0e4;
+    padding: 5px 10px; /* Add padding to create space between text and border */
+    display: flex;
+    align-items: center; /* Align text vertically */
+    justify-content: center; /* Center text horizontally */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* there was an interesting problem with the code above where the firs title box was 
+    missing the left and right border sides so only the top and bottom where visible.
+    the code is correct however the problem was that the selector was targeting two
+    elements with the same class, simply changing the class names, fixed the issue.
+    lesson learnt: make sure anything designed with css is specified properly */
+
+
+h1, h2, h4, h3{
+    text-align: center;
+    color:#ffffff;
+}
+
+.food-title{
+    font-size: 25px;
+}
+
+.enjoy{
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    
+}
+
+
+
+.recipe-card {
+    border: 3px solid #ecd5dc; /* Creates border around everything */
+    border-radius: 10px; /* Adds rounded corners */
+    width: 300px;
+    margin: 20px auto;
+    padding: 0 100px;
+    background-color: #f1e0e4;
+    color: #ffffff;
+
+  }
+
+
+
+figure{
+    text-align: center; /*centers all inside this element*/
+}
+.card-img{
+    width: 200px; /*change card image width*/
+    height: auto; /*scales height auto aspect ratio*/
+    margin-left: auto; /*centers image */
+    margin-right: auto; /*centers image*/
+
+}
+
+.section {
+    text-align: left; /* Center the content within sections */
+}
+
+.centered-container {
+    display: inline-block; /* Ensure sections stack horizontally */
+    text-align: left; /* Align the text within sections to the left */
+    margin: 0 auto; /* Center the sections horizontally */
+}
+
+.centered-list {
+    list-style-position: outside; /* Place bullet point outside of the content box */
+    padding-left: 0; /* Remove default padding */
+}
+
+.centered-list li {
+    margin-bottom: 10px; /* Optional: Add space between list items */
+    word-wrap: break-word; /* Allow text to wrap onto a new line if it's too long */
+}
